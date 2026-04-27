@@ -1,8 +1,6 @@
 Arizon Portfolio
 Live Demo
-
-https://your-live-link-here
-
+[https://arizon-portfolio.vercel.app/]
 Overview
 
 A modern, responsive portfolio website designed to showcase my skills, projects, and experience as a Frontend Developer and UI/UX enthusiast.
