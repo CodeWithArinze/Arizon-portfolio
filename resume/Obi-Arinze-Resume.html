@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obi Arinze Resume</title>
+    <style>
+        :root {
+            --bg: #f5efe8;
+            --card: #fffaf5;
+            --text: #1f2937;
+            --muted: #5b6472;
+            --accent: #dd6b20;
+            --border: #e8ddd1;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 32px;
+            font-family: Georgia, "Times New Roman", serif;
+            background: linear-gradient(180deg, #f8f2eb 0%, #efe4d8 100%);
+            color: var(--text);
+        }
+
+        .resume-shell {
+            max-width: 980px;
+            margin: 0 auto;
+        }
+
+        .resume-actions {
+            display: flex;
+            justify-content: flex-end;
+            gap: 12px;
+            margin-bottom: 18px;
+        }
+
+        .resume-actions button,
+        .resume-actions a {
+            appearance: none;
+            border: 1px solid var(--border);
+            border-radius: 999px;
+            padding: 12px 18px;
+            background: rgba(255, 250, 245, 0.92);
+            color: var(--text);
+            font: inherit;
+            font-size: 14px;
+            text-decoration: none;
+            cursor: pointer;
+            box-shadow: 0 10px 24px rgba(31, 41, 55, 0.08);
+        }
+
+        .resume-actions .primary {
+            background: var(--accent);
+            border-color: var(--accent);
+            color: #fffaf5;
+        }
+
+        .resume {
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: 0 18px 50px rgba(31, 41, 55, 0.12);
+        }
+
+        .hero {
+            padding: 40px 44px 28px;
+            background: linear-gradient(135deg, #fff8f1 0%, #f3e4d3 100%);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .hero h1 {
+            margin: 0 0 10px;
+            font-size: 42px;
+            line-height: 1;
+        }
+
+        .hero p {
+            margin: 0;
+            font-size: 18px;
+            color: var(--muted);
+        }
+
+        .contact {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px 24px;
+            margin-top: 20px;
+            font-size: 15px;
+            color: var(--muted);
+        }
+
+        .contact a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        .content {
+            padding: 36px 44px 44px;
+            display: grid;
+            gap: 28px;
+        }
+
+        section h2 {
+            margin: 0 0 12px;
+            font-size: 15px;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            color: var(--accent);
+        }
+
+        section p,
+        li {
+            font-size: 16px;
+            line-height: 1.75;
+            color: var(--text);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 26px;
+        }
+
+        ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+
+        .item {
+            margin-bottom: 16px;
+        }
+
+        .item:last-child {
+            margin-bottom: 0;
+        }
+
+        .item strong {
+            display: block;
+            margin-bottom: 4px;
+            font-size: 17px;
+        }
+
+        .muted {
+            color: var(--muted);
+        }
+
+        @media print {
+            @page {
+                size: A4;
+                margin: 12mm;
+            }
+
+            body {
+                background: #fff;
+                padding: 0;
+            }
+
+            .resume-shell {
+                max-width: none;
+            }
+
+            .resume-actions {
+                display: none;
+            }
+
+            .resume {
+                box-shadow: none;
+                border: none;
+                border-radius: 0;
+                max-width: none;
+            }
+        }
+
+        @media (max-width: 700px) {
+            body {
+                padding: 16px;
+            }
+
+            .hero,
+            .content {
+                padding-left: 22px;
+                padding-right: 22px;
+            }
+
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="resume-shell">
+        <div class="resume-actions">
+            <a href="../index.html">Back to Portfolio</a>
+            <button type="button" class="primary" onclick="window.print()">Download PDF</button>
+        </div>
+
+        <article class="resume">
+            <header class="hero">
+                <h1>Obi Arinze</h1>
+                <p>Frontend Web Developer</p>
+                <div class="contact">
+                    <span>Anambra, Nigeria</span>
+                    <a href="mailto:aobi3980@gmail.com">aobi3980@gmail.com</a>
+                    <span>+234 913 573 9518</span>
+                    <a href="https://wa.me/2349135739518">WhatsApp</a>
+                </div>
+            </header>
+
+                <section>
+                    <h2>Profile</h2>
+                    <p>I design and build polished websites that help businesses look credible, attract the right clients, and turn attention into enquiries. My focus is front-end development, responsive design, and clear user experiences that feel modern, trustworthy, and easy to navigate.</p>
+                </section>
+
+                <main class="content">
+                    <div class="grid">
+                        <section>
+                            <h2>Core Skills</h2>
+                            <ul>
+                                <li>HTML, CSS, JavaScript</li>
+                                <li>Bootstrap and React</li>
+                                <li>Responsive web design</li>
+                                <li>Landing page development</li>
+                                <li>Portfolio website builds</li>
+                                <li>UI-focused frontend work</li>
+                            </ul>
+                        </section>
+
+                        <section>
+                            <h2>Services</h2>
+                            <ul>
+                                <li>Business websites</li>
+                                <li>Landing pages</li>
+                                <li>Portfolio websites</li>
+                                <li>E-commerce frontend</li>
+                                <li>Website maintenance</li>
+                                <li>Modern redesigns</li>
+                            </ul>
+                        </section>
+                    </div>
+
+                    <section>
+                        <h2>Experience</h2>
+                        <div class="item">
+                            <strong>Freelance Web Developer</strong>
+                            <span class="muted">2023 - Present</span>
+                            <p>Designed and built websites, landing pages, and personal portfolios for clients who need a stronger online presence. Focused on responsive layouts, clean structure, modern presentation, and business-ready user experience.</p>
+                        </div>
+                        <div class="item">
+                            <strong>Responsive Interface Builder</strong>
+                            <span class="muted">2024 - Present</span>
+                            <p>Created mobile-friendly front-end interfaces using HTML, CSS, JavaScript, Bootstrap, and React, with attention to clarity, performance, and conversion-focused design.</p>
+                        </div>
+                    </section>
+
+                    <section>
+                        <h2>Education</h2>
+                        <div class="item">
+                            <strong>Self-Led Frontend Training</strong>
+                            <span class="muted">2024 - Present</span>
+                            <p>Built practical experience through hands-on projects in frontend development, responsive design, and modern UI implementation.</p>
+                        </div>
+                    </section>
+                </main>
+            </article>
+    </div>
+</body>
+</html>
